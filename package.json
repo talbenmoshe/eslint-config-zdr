@@ -1,5 +1,5 @@
 {
-  "name": "@zdr/eslint-config-zdr",
+  "name": "@zdrbm/eslint-config-zdr",
   "version": "1.0.0",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
