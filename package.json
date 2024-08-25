@@ -1,0 +1,19 @@
+{
+  "name": "@zdr/eslint-config-zdr",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "test": ":"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/talbenmoshe/eslint-config-zdr.git"
+  },
+  "author": "tal.benm@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/talbenmoshe/eslint-config-zdr/issues"
+  },
+  "homepage": "https://github.com/talbenmoshe/eslint-config-zdr#readme",
+  "description": ""
+}
