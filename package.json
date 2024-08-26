@@ -1,6 +1,6 @@
 {
   "name": "@zdrbm/eslint-config-zdr",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "umd:main": "dist/umd/index.js",
@@ -21,7 +21,9 @@
     "type": "git",
     "url": "git+https://github.com/talbenmoshe/eslint-config-zdr.git"
   },
-  "author": "tal.benm@gmail.com",
+  "author": {
+    "name": "tal.benm@gmail.com"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/talbenmoshe/eslint-config-zdr/issues"
@@ -29,15 +31,19 @@
   "homepage": "https://github.com/talbenmoshe/eslint-config-zdr#readme",
   "description": "",
   "dependencies": {
+    "@actions/core": "^1.10.1",
+    "@actions/github": "^6.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.9.1",
+    "@typescript-eslint/parser": "^6.9.1",
     "eslint": "^8.53.0",
     "eslint-config-standard-with-typescript": "^39.1.1",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-jest": "^27.6.0",
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "@typescript-eslint/eslint-plugin": "^6.9.1",
-    "@typescript-eslint/parser": "^6.9.1",
-    "eslint-plugin-import": "^2.29.0",
-    "eslint-plugin-jest": "^27.6.0"
+    "read-pkg": "^9.0.1",
+    "semver": "^7.6.3"
   },
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
@@ -49,5 +55,6 @@
     "ts-loader": "^9.2.5",
     "typescript": "^4.4.3"
   },
-  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+  "readme": "ERROR: No README data found!",
+  "_id": "@zdrbm/eslint-config-zdr@1.0.0"
 }

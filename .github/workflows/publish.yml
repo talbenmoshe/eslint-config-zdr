@@ -2,27 +2,10 @@ name: Release & Publish
 
 on:
   push:
-    tags:
-      - 'v*'
+    branches:
+      - 'master'
 
 jobs:
-  release:
-    name: Create Release
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: ${{ github.ref }}
-          release_name: ${{ github.ref }}
-          draft: false
-          prerelease: false
-
   publish:
     runs-on: ubuntu-latest
     steps:
@@ -36,6 +19,8 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
+      - name: bump
+        run: node build-scripts/bump-minor.mjs
       - name: Publish to npm
         run: npm publish --access public
         env:
