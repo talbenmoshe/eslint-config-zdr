@@ -23,11 +23,7 @@ jobs:
         node-version: '20.x'
     - name: Install modules
       run: npm install
-    - name: PWD
-      run: pwd
-    - name: LS
-      run: ls -l
-    - name: BUmp
+    - name: bump
       run: node build-scripts/bump.js
   lint:
     runs-on: ubuntu-latest
