@@ -28,7 +28,7 @@ jobs:
     - name: LS
       run: ls -l
     - name: BUmp
-      run: node build/bump.js
+      run: node build-scripts/bump.js
   lint:
     runs-on: ubuntu-latest
     permissions:
